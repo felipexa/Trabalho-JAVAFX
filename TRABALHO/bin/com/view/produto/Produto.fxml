@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="712.0" style="-fx-background-color: #bfc6e3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.produto.ControllerProduto">
+   <children>
+      <Label layoutX="232.0" layoutY="66.0" text="CADASTRO DE PRODUTOS" textFill="#c90707">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="198.0" text="Nome:" />
+      <Label layoutX="37.0" layoutY="247.0" text="Quantidade:" />
+      <Label layoutX="78.0" layoutY="297.0" text="Preço:" />
+      <Label layoutX="356.0" layoutY="143.0" text="Buscar Produto (nome):" />
+      <Button fx:id="buttonInserir" layoutX="68.0" layoutY="351.0" mnemonicParsing="false" onAction="#inserirProduto" style="-fx-background-color: #74d669;" text="Inserir" />
+      <Button fx:id="buttonAlterar" layoutX="162.0" layoutY="351.0" mnemonicParsing="false" onAction="#alterarProduto" style="-fx-background-color: #f1fc6f;" text="Alterar" />
+      <Button fx:id="buttonExcluir" layoutX="257.0" layoutY="351.0" mnemonicParsing="false" onAction="#excluirProduto" style="-fx-background-color: #fa625c;" text="Excluir" />
+      <Button fx:id="buttonBuscar" layoutX="596.0" layoutY="138.0" mnemonicParsing="false" onAction="#buscarProduto" style="-fx-background-color: #5779f7;" text="Buscar" />
+      <TextArea fx:id="textAreaListProdutos" layoutX="356.0" layoutY="188.0" prefHeight="195.0" prefWidth="304.0" />
+      <TextField fx:id="textFieldNome" layoutX="133.0" layoutY="188.0" />
+      <TextField fx:id="textFieldQuantidade" layoutX="133.0" layoutY="242.0" />
+      <TextField fx:id="textFieldPreco" layoutX="133.0" layoutY="292.0" />
+      <TextField fx:id="textFieldCodigo" layoutX="518.0" layoutY="138.0" prefHeight="31.0" prefWidth="65.0" />
+      <Button fx:id="buttonSair" layoutX="357.0" layoutY="400.0" mnemonicParsing="false" onAction="#sair" prefHeight="31.0" prefWidth="304.0" style="-fx-background-color: #fa625c;" text="Sair da Aplicação" />
+   </children>
+</AnchorPane>
